@@ -7,7 +7,7 @@ moves = [
     [x * int(s[1]) for x in ins[s[0]]]
     for line
     in open('02b_input').readlines()
-    if (s := line.strip().split(' '))
+    if (s := line.split(' '))
 ]
 aim = forward = depth = 0
 for f, d in moves:
@@ -17,5 +17,4 @@ for f, d in moves:
             depth += f * aim
     elif d:
         aim += d
-print(forward, depth)
 print(forward * depth)
