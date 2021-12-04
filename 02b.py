@@ -6,7 +6,7 @@ ins = {
 moves = [
     [x * int(s[1]) for x in ins[s[0]]]
     for line
-    in open('02b_input').readlines()
+    in open('02a_input').readlines()
     if (s := line.split(' '))
 ]
 aim = forward = depth = 0
